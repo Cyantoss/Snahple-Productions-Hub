@@ -1,0 +1,193 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Snahple Productions Hub", "BloodTheme")
+
+--Main
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Credits")
+MainSection:NewLabel("HUB made by SNAHPLE PRODUCTIONS")
+MainSection:NewLabel("Games Supported:")
+MainSection:NewLabel("Blox Fruits")
+MainSection:NewLabel("Da Hood")
+MainSection:NewLabel("BedWars")
+MainSection:NewLabel("NinjaLegends")
+MainSection:NewLabel("Combat Warriors")
+
+---Blox Fruits
+local BloxFruits = Window:NewTab("BloxFruits")
+
+local BloxFruitsSection = BloxFruits:NewSection("Ripper Hub")
+
+BloxFruitsSection:NewButton("Ripper Hub", "Executes Ripper Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/hajibeza/RIPPER-HUB/main/RIPPERHUBV2.lua"))()
+end)
+
+local BloxFruitsSection = BloxFruits:NewSection("Muckuro Hub")
+
+BloxFruitsSection:NewButton("Muckuru Hub", "Executes Muckuru Hub", function()
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/xDepressionx/Free-Script/main/AllScript.lua")()
+end)
+
+local BloxFruitsSection = BloxFruits:NewSection("Hoho Hub")
+
+BloxFruitsSection:NewButton("HOHO Hub", "Executes HOHO Hub", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+end)
+
+local BloxFruitsSection = BloxFruits:NewSection("Zama Hub")
+
+BloxFruitsSection:NewButton("Zama Hub", "Executes Zama Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/RimuruScripter/Zama-Hub/main/LoadingScriptNew"))()
+end)
+
+local BloxFruitsSection = BloxFruits:NewSection("Tuper Hub")
+
+BloxFruitsSection:NewButton("Tuper Hub", "Executes Tuper Hub", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/TUPERX/TUPERX/Main/MenuBF/README.md'))()
+end)
+
+---BedWars
+local BedWars = Window:NewTab("BedWars")
+local BedWarsSection = BedWars:NewSection("Vape Script")
+
+BedWarsSection:NewButton("Vape Script", "Executes the Vape Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))()  
+end)
+
+---Combat Warriors
+local CombatWarriors = Window:NewTab("CombatWarriors")
+
+local CombatWarriorsSection = CombatWarriors:NewSection("Nova Hub")
+
+CombatWarriorsSection:NewButton("Nova Hub", "Executes Nova Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/SussyImposterRed/Scripts/main/NOVA_HUB_SOURCE"))()  
+end)
+
+local CombatWarriorsSection = CombatWarriors:NewSection("Project Hook")
+
+CombatWarriorsSection:NewButton("Project Hook", "Executes Project Hook", function()
+    loadstring(game:HttpGet("https://projecthook.xyz/scripts/free.lua"))()  
+end)
+
+local CombatWarriorsSection = CombatWarriors:NewSection("Bird Hub")
+
+CombatWarriorsSection:NewButton("Bird Hub", "Executes Bird Hub", function()
+    loadstring(game:HttpGet('https://pastebin.com/raw/pexrijZn'))()  
+end)
+
+--Da hood
+local DaHood = Window:NewTab("DaHood")
+local DaHoodSection = DaHood:NewSection("Pluto Hub")
+
+DaHoodSection:NewButton("Pluto Hub", "Executes Pluto Hub", function()
+    loadstring(game:HttpGet("loadstring(game:HttpGet('https://raw.githubusercontent.com/SpacedYes/lua-projects/master/DaHood.Lua'))()"))()  
+end)
+
+---Ninja Legends
+local NinjaLegends = Window:NewTab("NinjaLegends")
+
+local NinjaLegendsSection = NinjaLegends:NewSection("Proxima Hub")
+
+NinjaLegendsSection:NewButton("Proxima Hub", "Executes Proxima Hub", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/TrixAde/Proxima-Hub/main/Main.lua"))()  
+end)
+
+local NinjaLegendsSection = NinjaLegends:NewSection("Snahple Hub")
+
+NinjaLegendsSection:NewButton("Snahple Hub", "Snahple Hub", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Mank-Dude/Ninja-Legends/main/obf_SXX8Q0XWp2OD7cru6BYWo7A9CrzhSZyi2JQ5LHe0m38b607l6R731Y2RvaB1X2ze.lua'))()  
+end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---Misc
+local Misc = Window:NewTab("Misc")
+local MiscSection = Misc:NewSection("GUI Toggle")
+MiscSection:NewKeybind("Toggle GUI", "Turn Gui on/off", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
+
+---local Player
+local MiscSection = Misc:NewSection("Local Player")
+
+MiscSection:NewSlider("Player Speed", "Changes character speed", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+MiscSection:NewSlider("Jump Power", "Jump Boost", 500, 0, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+MiscSection:NewButton("Infinite Jump", "Keep on jumping", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/Mank-Dude/Infinite-Jump/main/Infintie%20jump'))()
+end)
+
+MiscSection:NewButton("Reset WS/JP", "Resets to all defaults", function()
+    game.Players.LocalPlayer.character.Humanoid.JumpPower = 50
+    game.Players.LocalPlayer.character.Humanoid.WalkSpeed = 16
+end)
+
+
+---Discord
+local Discord = Window:NewTab("Discord")
+local DiscordSection = Discord:NewSection("Copy to clipboard")
+
+DiscordSection:NewButton("Discord Server", "Want to support or got any questions?", function()
+    setclipboard("https://discord.gg/KKFmYKVZ") 
+end)
+
